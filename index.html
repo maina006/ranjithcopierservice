@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ranjith Copier Services - Specialized in Canon Xerox machine repair, maintenance, and sales of new and second-hand machines.">
     <title>Ranjith Copier Services</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -55,15 +61,16 @@
 
         /* Hero Section */
         .hero {
-    background: url('https://github.com/maina006/ranjithcopierservice/blob/ab2844a0050ec406a8d4bd071780ef9ac377daeb/full%20mechines.jpeg?raw=true') no-repeat center center;
-    background-size: cover;
-    color: #2c3e50;
-    text-align: center;
-    padding: 6em 2em;
-    min-height: 500px;
-    background-blend-mode: overlay;
-    background-color: rgba(255, 255, 255, 0.6);
-       }
+            background: url('https://github.com/maina006/ranjithcopierservice/blob/ab2844a0050ec406a8d4bd071780ef9ac377daeb/full%20mechines.jpeg?raw=true') no-repeat center center;
+            background-size: cover;
+            color: #2c3e50;
+            text-align: center;
+            padding: 6em 2em;
+            min-height: 500px;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
         .hero h1 {
             font-size: 3.5em;
             margin: 0;
@@ -212,24 +219,30 @@
         .contact-card a:hover {
             color: #f1c40f;
         }
-
-        .contact-cards a {
-            color: black; /* Text color */
-        }
     </style>
 </head>
 
-
-
 <body>
-    <nav class="navbar">
-        <div class="logo">RCS</div>
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-        <button class="contact-btn" onclick="openContact()">Contact</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RCS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <header id="home" class="hero">
@@ -261,7 +274,7 @@
             <div class="card">
                 <i class="fas fa-lightbulb"></i>
                 <h3>Expert Advice</h3>
-                <p>Get professional tips to ensure the longevity of your Xerox machines.</p>
+                <p>Get professional advice on Xerox machine use, maintenance, and troubleshooting.</p>
             </div>
         </div>
     </section>
@@ -269,51 +282,77 @@
     <section id="about" class="about-section">
         <div class="about-content">
             <h2>About Us</h2>
-            <p>At Ranjith Copier Services, we pride ourselves on providing expert solutions for all your Canon Xerox machine needs. With 15+ years of experience and a dedicated team, we ensure fast, reliable, and cost-effective services.</p>
+            <p>Ranjith Copier Services has been providing trusted repair and maintenance services for Canon Xerox machines for over a decade. We strive to deliver excellent service and affordable solutions.</p>
         </div>
         <div class="about-image">
-    <img src="https://github.com/maina006/ranjithcopierservice/blob/a55ab61cd83103dc622748916b95528836ceca22/xerox%20with%20me.jpeg?raw=true" alt="Ranjith with Xerox Machines">
-</div>
-
-
+            <img src="https://github.com/maina006/ranjithcopierservice/blob/8662ab6644e57b7aee6dff5d1253cb91f7fc30be/xerox%20with%20me.jpeg?raw=true" alt="Canon Xerox Machine">
+        </div>
     </section>
-
-    <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <div class="contact-cards">
-        <div class="contact-card">
+     <section id="contact" class="container py-5">
+    <div class="contact-cards row">
+        <div class="contact-card col-md-3">
             <h3>Phone</h3>
             <p><a href="tel:+918778282813">+91 87782 82813</a></p>
         </div>
-        <div class="contact-card">
+        <div class="contact-card col-md-3">
             <h3>Email</h3>
-            <p><a href="mailto:008ranjithkumar@gmail.com">008ranjithkumar@gmail.com</a></p>
+            <p><a href="mailto:008ranjithkumar@gmail.com" style="font-size: 0.8em;">008ranjithkumar@gmail.com</a></p>
         </div>
-        <div class="contact-card">
+        <div class="contact-card col-md-3">
             <h3>WhatsApp</h3>
             <p><a href="https://wa.me/qr/OBGCXSN37QDHM1" target="_blank">Click to Chat on WhatsApp</a></p>
         </div>
-        <div class="contact-card">
+        <div class="contact-card col-md-3">
             <h3>Address</h3>
             <p>No-1419 EWS, TNHB, Kakkalur, Thiruvallur, PIN-602003</p>
         </div>
     </div>
 </section>
 
-    <footer>
-        <p>&copy; 2024 Ranjith Copier Services. All rights reserved.</p>
+        <footer>
+        <p>&copy; 2024 Ranjith Copier Services. All Rights Reserved.</p>
     </footer>
 
-    <!-- Floating Contact Button -->
-    <div class="floating-contact" onclick="openContact()">
-        <i class="fas fa-phone-alt"></i>
+    <div class="floating-contact" onclick="openContact()">📞</div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContact()">&times;</span>
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us for any inquiries or services.</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+918778282813">+91 87782 82813</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:008ranjithkumar@gmail.com">008ranjithkumar@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/qr/OBGCXSN37QDHM1" target="_blank">Click to Chat on WhatsApp</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Address</h3>
+                    <p>No-1419 EWS, TNHB, Kakkalur, Thiruvallur, PIN-602003</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         function openContact() {
-            window.location.href = '#contact';
+            document.getElementById('contactModal').style.display = 'block';
+        }
+
+        function closeContact() {
+            document.getElementById('contactModal').style.display = 'none';
         }
     </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
